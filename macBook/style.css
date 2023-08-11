@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inform {
+  width: 800px;
+}
+
+center {
+  margin-top: 30px;
+}
+
+.mac_box {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.name {
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.color {
+  color: #0071e3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.switchers {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 15px;
+}
+
+.switch {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #797979;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  background: #cfe7ff;
+}
+
+.active {
+  background-color: #0071e3;
+  color: #fff;
+}
+
+.storage_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.storage {
+  width: 275px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid #cfe7ff;
+  background: none;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.activated {
+  border: 2px solid #007fff;
+}
+
+
+.plus {
+    display: flex;
+}
+
+.basic_price {
+  display: none;
+}

@@ -1,49 +1,34 @@
-let purple = document.querySelector('.purple')
-let gold = document.querySelector('.gold')
-let silver = document.querySelector('.silver')
-let spaceBlack = document.querySelector('.spaceBlack')
-let img = document.querySelector('.img_iphone')
+let btns = document.querySelectorAll(".btnss");
+let img = document.querySelector(".img_phone");
+let colorText = document.querySelector(".col");
 
-purple.onclick = () => {
-    img.style.backgroundImage = `url("./img/black.png")`
-    img.style.backgroundSize = `cover`
-}
-gold.onclick = () => {
-    img.style.backgroundImage = `url("./img/goldish.png")`
-    img.style.backgroundSize = `cover`
+let current = 'Color'
 
-}
-silver.onclick = () => {
-    img.style.backgroundImage = `url("./img/silverish.png")`
-    img.style.backgroundSize = `cover`
 
-}
-spaceBlack.onclick = () => {
-    img.style.backgroundImage = `url("./img/gray.png")`
-    img.style.backgroundSize = `cover`
+const images = {
+  'Purple': "./img/black.png",
+  'Gold': "./img/goldish.png",
+  'Silver': "./img/silverish.png",
+  'Space Black': "./img/gray.png",
+};
 
-}
+btns.forEach((btn) => {
+  const key = btn.getAttribute("data-col");
 
-let colorText = document.querySelector('.col_text')
+  btn.onclick = () => {
+    btns.forEach((btn) => btn.classList.remove("active"));
+    img.setAttribute("src", images[key]);
 
-purple.onmouseenter = () => {
-    colorText.innerHTML = ' - Deep Purple'
-    colorText.style.fontSize = '19px' 
-    colorText.style.fontWeight = '700'
-}
-gold.onmouseenter = () => {
-    colorText.innerHTML = ' - Gold'
-    colorText.style.fontSize = '19px' 
-    colorText.style.fontWeight = '700'
-}
-silver.onmouseenter = () => {
-    colorText.innerHTML = ' - Silver'
-    colorText.style.fontSize = '19px' 
-    colorText.style.fontWeight = '700'
-}
-spaceBlack.onmouseenter = () => {
-    colorText.innerHTML = ' - Space Black'
-    colorText.style.fontSize = '19px' 
-    colorText.style.fontWeight = '700'
-}
+    btn.classList.add("active");
+    current = `Color - ${key}`
+    colorText.innerHTML = current
+  };
 
+  btn.onmouseenter = () => {
+    colorText.innerHTML = `Color - ${key}`;
+  };
+
+  btn.onmouseleave = () => {
+    colorText.innerHTML = current
+  };
+})

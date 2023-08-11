@@ -291,17 +291,9 @@ h3 {
   padding-top: 1px;
 }
 
+.help_storage:hover .btn_plus,
+.help:hover .btn_plus,
 .butn:hover .btn_plus {
-  background-color: black;
-  color: white;
-}
-
-.help:hover .btn_plus {
-  background-color: black;
-  color: white;
-}
-
-.help_storage:hover .btn_plus {
   background-color: black;
   color: white;
 }
@@ -428,20 +420,24 @@ h3 {
   padding: 3px;
 }
 
-.btnss:hover {
-  border: 1px solid #acacac;
-  border-radius: 100%;
-}
-
 .img_iphone {
   width: 800px;
   height: 552px;
-  background-size: contain;
-  background-image: url(../img/iphone-14-pro-model-unselect-gallery-1-202209.png);
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position-x: center;
   transition: 0.5s ease;
   position: sticky;
   top: 100px;
 }
+
+.img_phone {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.active {
+  border-radius: 100%;
+  border: 1px solid blue;
+}
+
+
