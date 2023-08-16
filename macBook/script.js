@@ -21,7 +21,7 @@ colorBtn.forEach((btn) => {
   };
 });
 
-let basicPrice = parseFloat(document.querySelector('.basic_price').innerText)
+let basicPrice = document.querySelector('.basic_price').innerText
 
 let storages = {
   default: 0,

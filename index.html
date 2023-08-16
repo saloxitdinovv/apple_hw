@@ -6,10 +6,399 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iPhone 14</title>
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/fonts.css">
-    <link rel="icon" href="img/apple_logo.png" type="image/x-icon">
+    <link rel="icon" href="img/apple_logo.png" type="image/x-icon" />
   </head>
   <body>
+    <div class="modal_bg" data-close></div>
+
+    <div class="modals">
+      <div class="container">
+        <div class="modal_first">
+          <div class="modal_content">
+            <button class="close" data-close>
+              <img src="img/close.png" alt="" class="close_img" />
+            </button>
+
+            <div class="text">
+              <h1 class="incredible-deals">
+                Incredible carrier deals? We’ve got ‘em right here. 😎
+              </h1>
+              <p class="deals_info">
+                When you buy your new iPhone from Apple, you can still get a
+                sweet carrier deal. Just select your trade-in to see how much
+                you can save. Have questions? No worries,
+                <a href="#" class="deal_linkk">
+                  our iPhone Specialists are here to help.</a
+                >
+              </p>
+            </div>
+
+            <div class="companies_buttons">
+              <button class="comp_btn">
+                <img src="img/att_active.png" alt="" class="comp_img att" />
+              </button>
+
+              <button class="comp_btn">
+                <img src="img/t-mobile.png" alt="" class="comp_img t_mobile" />
+              </button>
+
+              <button class="comp_btn">
+                <img src="img/verizon.png" alt="" class="comp_img verizon" />
+              </button>
+            </div>
+
+            <div class="selector">
+              <span>Choose a trade-in</span>
+              <select name="phone" id="phones">
+                <option value="133392" selected>iPhone 12 Pro</option>
+                <option value="146169">iPhone 13 Pro Max</option>
+                <option value="146168">iPhone 13 Pro</option>
+                <option value="146167">iPhone 13</option>
+                <option value="146170">iPhone 13 mini</option>
+                <option value="152719">iPhone SE (3rd generation)</option>
+                <option value="133393">iPhone 12 Pro Max</option>
+                <option value="133391">iPhone 12</option>
+                <option value="133394">iPhone 12 mini</option>
+                <option value="106555">iPhone SE (2nd generation)</option>
+                <option value="106554">iPhone 11 Pro Max</option>
+                <option value="106553">iPhone 11 Pro</option>
+                <option value="106552">iPhone 11</option>
+                <option value="41713">iPhone XS Max</option>
+                <option value="41712">iPhone XS</option>
+                <option value="41711">iPhone XR</option>
+                <option value="14595">iPhone X</option>
+                <option value="14616">iPhone 8 Plus</option>
+                <option value="14614">iPhone 8</option>
+                <option value="13794">iPhone 7 Plus</option>
+                <option value="13796">iPhone 7</option>
+                <option value="122586">Galaxy Note20(256GB)</option>
+                <option value="122589">Galaxy Note20 Ultra(256GB)</option>
+                <option value="122590">Galaxy Note20 Ultra(512GB)</option>
+                <option value="73255">Galaxy Note10(256GB)</option>
+                <option value="73262">Galaxy Note9(128GB)</option>
+                <option value="73263">Galaxy Note9(512GB)</option>
+                <option value="73294">Galaxy Note8(64GB)</option>
+                <option value="73295">Galaxy Note8(128GB)</option>
+                <option value="73296">Galaxy Note8(256GB)</option>
+                <option value="146200">Galaxy S22 Ultra 5G(128GB)</option>
+                <option value="146201">Galaxy S22 Ultra 5G(256GB)</option>
+                <option value="146202">Galaxy S22 Ultra 5G(512GB)</option>
+                <option value="146199">Galaxy S22 Ultra 5G(1TB)</option>
+                <option value="146196">Galaxy S22+ 5G(128GB)</option>
+                <option value="146198">Galaxy S22+ 5G(256GB)</option>
+                <option value="146195">Galaxy S22 5G(128GB)</option>
+                <option value="146197">Galaxy S22 5G(256GB)</option>
+                <option value="133400">Galaxy S21+ 5G(128GB)</option>
+                <option value="133401">Galaxy S21+ 5G(256GB)</option>
+                <option value="133395">Galaxy S21 5G(128GB)</option>
+                <option value="133396">Galaxy S21 5G(256GB)</option>
+                <option value="106567">Galaxy S20+(128GB)</option>
+                <option value="106560">Galaxy S20(128GB)</option>
+                <option value="73271">Galaxy S10+(128GB)</option>
+                <option value="73272">Galaxy S10+(512GB)</option>
+                <option value="73270">Galaxy S10+(1TB)</option>
+                <option value="73265">Galaxy S10(128GB)</option>
+                <option value="73266">Galaxy S10(512GB)</option>
+                <option value="73273">Galaxy S10e(128GB)</option>
+                <option value="73274">Galaxy S10e(256GB)</option>
+                <option value="73287">Galaxy S9+(64GB)</option>
+                <option value="73288">Galaxy S9+(128GB)</option>
+                <option value="73289">Galaxy S9+(256GB)</option>
+                <option value="73284">Galaxy S9(64GB)</option>
+                <option value="73285">Galaxy S9(128GB)</option>
+                <option value="73286">Galaxy S9(256GB)</option>
+                <option value="146174">Google Pixel 6 Pro(128GB)</option>
+                <option value="146175">Google Pixel 6 Pro(256GB)</option>
+                <option value="146176">Google Pixel 6 Pro(512GB)</option>
+                <option value="146177">Google Pixel 6a(128GB)</option>
+                <option value="146172">Google Pixel 6(128GB)</option>
+                <option value="146173">Google Pixel 6(256GB)</option>
+                <option value="146171">Google Pixel 5a 5G(128GB)</option>
+                <option value="122559">Google Pixel 5(128GB)</option>
+                <option value="122557">Google Pixel 4a(128GB)</option>
+                <option value="106558">Google Pixel 4 XL(64GB)</option>
+                <option value="106559">Google Pixel 4 XL(128GB)</option>
+                <option value="106557">Google Pixel 4(128GB)</option>
+                <option value="106556">Google Pixel 4(64GB)</option>
+              </select>
+            </div>
+
+            <h1 class="changing">For existing and new AT&T customers</h1>
+
+            <div class="grey_box">
+              <div class="acardion">
+                <div class="fisrt_acardion accardion">
+                  <div class="acardion_head">
+                    iPhone 14 Pro
+                    <span class="arrow-icon">
+                      <img src="img/arrow.svg" alt="" class="arrow_acardion" />
+                    </span>
+                  </div>
+
+                  <hr />
+
+                  <div class="acardion_content">
+                    <div class="acar_box">
+                      <div class="acar_item">
+                        <h1 class="acar_h">Cost</h1>
+                      </div>
+
+                      <div class="acar_item">
+                        <h1 class="name">iPhone 14 Pro</h1>
+
+                        <h1 class="credit">
+                          From $0.00/mo. over 36 mo. after trade-in
+                          <span class="credit_info">
+                            <p>
+                              Up to three monthly payments of $27.75 before AT&T
+                              bill credits begin.
+                            </p>
+                          </span>
+                        </h1>
+
+                        <h1 class="credit">
+                          $999.00
+                          <span class="credit_details">
+                            <p>Total amount financed at 0% APR</p>
+                          </span>
+                          <span class="credit_info">
+                            <p>
+                              This is the total cost of your new iPhone before
+                              AT&T bill credits.
+                            </p>
+                          </span>
+                        </h1>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="acar_box">
+                      <div class="acar_item">
+                        <h1 class="acar_h">
+                          Credits and <br />
+                          Discounts
+                        </h1>
+                      </div>
+
+                      <div class="acar_item">
+                        <h1 class="credit">
+                          $999.00
+                          <span class="credit_details">
+                            <p>Total amount financed at 0% APR</p>
+                          </span>
+                          <span class="credit_info">
+                            <p>
+                              Bill credits will be applied to your AT&T bill
+                              over 36 months and will begin within three bill
+                              cycles. If you have any questions about your
+                              billing, contact AT&T.
+                            </p>
+                          </span>
+                        </h1>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="acar_box">
+                      <div class="acar_item">
+                        <h1 class="acar_h">
+                          Credits and <br />
+                          Discounts
+                        </h1>
+                      </div>
+
+                      <div class="acar_item">
+                        <span class="credit_info">
+                          <ol>
+                            <li>Trade in an eligible smartphone.</li>
+                            <li>
+                              Select AT&T Installment Plans as your monthly
+                              payment option — available to new and existing
+                              AT&T customers who want to upgrade or add a line.
+                            </li>
+                            <li>Activate with an eligible AT&T rate plan.</li>
+                          </ol>
+                        </span>
+                      </div>
+                    </div>
+
+                    <hr />
+                  </div>
+                </div>
+
+                <div class="second_acardion accardion">
+                  <div class="acardion_head">
+                    iPhone 14 Pro Max
+                    <span class="arrow-icon">
+                      <img src="img/arrow.svg" alt="" class="arrow_acardion" />
+                    </span>
+                  </div>
+
+                  <hr />
+
+                  <div class="acardion_content">
+                    <div class="acar_box">
+                      <div class="acar_item">
+                        <h1 class="acar_h">Cost</h1>
+                      </div>
+
+                      <div class="acar_item">
+                        <h1 class="name">iPhone 14 Pro Max</h1>
+
+                        <h1 class="credit">
+                          From $2.75/mo.per month over 36 mo.months after
+                          trade-infootnote
+                          <span class="credit_info">
+                            <p>
+                              Up to three monthly payments of $30.53 before AT&T
+                              bill credits begin.
+                            </p>
+                          </span>
+                        </h1>
+
+                        <h1 class="credit">
+                          $1,099.00
+                          <span class="credit_details">
+                            <p>Total amount financed at 0% APR</p>
+                          </span>
+                          <span class="credit_info">
+                            <p>
+                              This is the total cost of your new iPhone before
+                              AT&T bill credits.
+                            </p>
+                          </span>
+                        </h1>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="acar_box">
+                      <div class="acar_item">
+                        <h1 class="acar_h">
+                          Credits and <br />
+                          Discounts
+                        </h1>
+                      </div>
+
+                      <div class="acar_item">
+                        <h1 class="credit">
+                          $1,000.00
+                          <span class="credit_details">
+                            <p>Total bill credits for: iPhone 12 Pro</p>
+                          </span>
+                          <span class="credit_info">
+                            <p>
+                              Bill credits will be applied to your AT&T bill
+                              over 36 months and will begin within three bill
+                              cycles. If you have any questions about your
+                              billing, contact AT&T.
+                            </p>
+                          </span>
+                        </h1>
+                      </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="acar_box">
+                      <div class="acar_item">
+                        <h1 class="acar_h">
+                          Credits and <br />
+                          Discounts
+                        </h1>
+                      </div>
+
+                      <div class="acar_item">
+                        <span class="credit_info">
+                          <ol>
+                            <li>Trade in an eligible smartphone.</li>
+                            <li>
+                              Select AT&T Installment Plans as your monthly
+                              payment option — available to new and existing
+                              AT&T customers who want to upgrade or add a line.
+                            </li>
+                            <li>Activate with an eligible AT&T rate plan.</li>
+                          </ol>
+                        </span>
+                      </div>
+                    </div>
+
+                    <hr />
+                  </div>
+                </div>
+              </div>
+
+              <p class="unnecesssary">
+                ∆ AT&T Special Deal: Monthly price reflects net monthly payment,
+                after application of AT&T trade-in credit applied over 36 months
+                with purchase of an iPhone 14 Pro, iPhone 14 Pro Max, iPhone 14,
+                or iPhone 14 Plus and trade-in of eligible smartphone. Receive
+                credit with purchase of an iPhone 14 Pro or iPhone 14 Pro Max of
+                either $1000, $700, or $350 (based upon the model and condition
+                of your trade-in smartphone). Receive credit with purchase of an
+                iPhone 14 or iPhone 14 Plus of either $700 or $350 (based upon
+                the model and condition of your trade-in smartphone). Max bill
+                credits will not exceed the cost of the device. Requires upgrade
+                of an existing line or activation of a new line and purchase of
+                a new iPhone 14, iPhone 14 Plus, iPhone 14 Pro, or iPhone 14 Pro
+                Max on qualifying 36 month 0% APR installment plan, subject to
+                carrier credit qualification. AT&T Installment Plan with Next Up
+                is not eligible for this promotion. $0 down for well qualified
+                customers only, or down payment may be required and depends on a
+                variety of factors. Tax on full retail price due at sale.
+                Requires activation on eligible unlimited plan. If you cancel
+                eligible wireless service, credits will stop and you will owe
+                the remaining device balance. Activation/Upgrade Fee: $35. Trade
+                in device may not be on existing installment plan. Bill credits
+                are applied as a monthly credit over the 36 month installment
+                plan. Credits start within 3 bills. Will receive catchup credits
+                once credits start. Wireless line must be on an installment
+                agreement, active, and in good standing for 30 days to qualify.
+                Installment agreement starts when device is shipped. To get all
+                credits, device must remain on agreement for entire term and you
+                must keep eligible service on device for entire installment
+                term. Limited time offer; subject to change. Limits: one
+                trade-in per qualifying purchase and one credit per line. May
+                not be combinable with other offers, discounts, or credits.
+                Purchase, financing, other limits, and restrictions apply. Price
+                for iPhone 14 and iPhone 14 Plus includes $30 AT&T connectivity
+                discount. Activation required. ◊◊ Trade-in values will vary
+                based on the condition, year, and configuration of your eligible
+                trade-in device. Not all devices are eligible for credit. You
+                must be at least 18 years old to be eligible to trade in for
+                credit or for an Apple Gift Card. Trade-in value may be applied
+                toward qualifying new device purchase, or added to an Apple Gift
+                Card. Actual value awarded is based on receipt of a qualifying
+                device matching the description provided when estimate was made.
+                Sales tax may be assessed on full value of a new device
+                purchase. In-store trade-in requires presentation of a valid
+                photo ID (local law may require saving this information). Offer
+                may not be available in all stores, and may vary between
+                in-store and online trade-in. Some stores may have additional
+                requirements. Apple or its trade-in partners reserve the right
+                to refuse or limit quantity of any trade-in transaction for any
+                reason. More details are available from Apple’s trade-in partner
+                for trade-in and recycling of eligible devices. Restrictions and
+                limitations may apply.
+              </p>
+            </div>
+
+            <div class="specialist_help">
+              <button class="person">
+                <img src="img/person.png" alt="" />
+              </button>
+              <h1 class="questions">Have more questions?</h1>
+              <a href="#"> Ask an iPhone Specialist </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     <header class="header">
       <div class="container">
         <div class="links_box">
@@ -91,7 +480,7 @@
         <div class="career_info">
           <div class="career-item">
             <p class="deals">Special Carrier Deals</p>
-            <a href="#" class="deal_link">See all deals</a>
+            <a href="#" class="deal_link" data-open>See all deals</a>
           </div>
           <div class="career-item">
             <div class="career_box">
@@ -144,12 +533,12 @@
             </p>
           </div>
           <div class="phone_item">
-            <button class="butn">
+            <button class="butn" data-open>
               <p class="btn_text">Get $40–$640 for your trade-in.</p>
               <div class="btn_plus">+</div>
             </button>
 
-            <button class="butn">
+            <button class="butn" data-open>
               <p class="btn_text">Get 3% Daily Cash back with Apple Card.</p>
               <div class="btn_plus">+</div>
             </button>
